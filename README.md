@@ -1,5 +1,5 @@
 # calc_python
-# This is a basic calculator program in python that takes two inputs from the user and performs the following arithmetic operations:
+ This is a basic calculator program in python that takes two inputs from the user and performs the following arithmetic operations:
 
 Addition (Sum):
 Takes two numbers as input and returns their sum.
