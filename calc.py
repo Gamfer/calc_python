@@ -1,20 +1,21 @@
-#Usando módulos em mais de um script para mostrar sua versatilidade:
+#This is a simple study of using modules in different scripts.
 
-#O primeiro script é uma calculadora:
-#função de soma
-def somar(a, b):
+#First script is a calculator:
+
+#Adding:
+def adding(a, b):
     return float(a) + float(b)
 
-#função de subtração
-def subtrair(a, b):
+#Subtracting:
+def subtracting(a, b):
     return float(a) - float(b)
 
-#função de divisão
-def dividir(a, b):
+#Dividing:
+def dividing(a, b):
     if b==0:
         return 0
     return float(a) / float(b)
 
-#função de multiplicar
-def multiplicar(a, b):
+#Multiplying:
+def multiplying(a, b):
           return float(a) * float(b)

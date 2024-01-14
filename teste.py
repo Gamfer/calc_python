@@ -1,31 +1,42 @@
-# Agora, vamos importar o nosso módulo de calculadora para este script:
+# Now, let's import our calculator module into this script:
 import calc
-#Solicitando valores ao usuário:
-valor1 = input('digite um valor: ')
-valor2 = input('digite outro valor: ')
-#armazenando a soma:
-soma = calc.somar(valor1, valor2)
-#Exibindo a soma:
-print('A soma é: {}'.format(soma))
-#fazendo o mesmo com as outras funções do módulo:
-divisao = calc.dividir(valor1, valor2)
-print('A divisão é: {}'.format(divisao))
-#Fazendo o mesmo colocando a chamada da função dentro do .format
-print('A multiplicação é {}'.format(calc.multiplicar(valor1, valor2)))
-# E outro jeito
-subtracao = print('A subtração é {}'.format(calc.subtrair(valor1, valor2)))
+# Requesting values from the user:
+value1 = input('Type a number: ')
+value2 = input('Type another number: ')
+# Storing the sum:
+sum = calc.adding(value1, value2)
+# Displaying it:
+print('The sum is: {}'.format(sum))
+# Doing the same with the other functions of the module:
+division = calc.dividing(value1, value2)
+print('A divisão é: {}'.format(division))
+# Doing the same by placing the function call inside the .format:
+multiplication = print('A multiplicação é {}'.format(calc.multiplying(value1, value2)))
 
-#Podemos selecionar funções específicas do módulo com o comando "from":
-#importação de funções específicas do módulo calc.py
-from calc import somar, subtrair
-#solicitando valores ao usuário
-valor1 = input("Digite um valor: ")
-valor2 = input("Digite outro valor: ")
-#armazenando a soma
-soma = somar(valor1, valor2)
-#exibindo a soma
-print("A soma é {}".format(soma))
-#E a subtração:
-subtracao = print('A subtração é {}'.format(subtrair(valor1,valor2)))
+
+# Another way
+subtracao = print('A subtração é {}'.format(calc.subtracting(value1, value2)))
+
+# We can select specific functions from the module using the "from" command:
+# Importing specific functions from the calc.py module
+from calc import adding, subtracting, multiplying, dividing
+# Requesting values from the user:
+value1 = input("Type a number: ")
+value2 = input("Type another number: ")
+# Storing the sum:
+sum = adding(value1, value2)
+# Displaying the sum:
+print("The sum is {}".format(sum))
+# And the subtraction:
+subtraction = print('The subtraction is {}'.format(subtracting(value1, value2)))
+
+# Multiplication:
+multiplication = print('The multiplication is {}.'.format(multiplying(value1,value2)))
+
+# Finally, division:
+division = print('The division is {}'.format(dividing(value1,value2)))
+
+
+
 
 
