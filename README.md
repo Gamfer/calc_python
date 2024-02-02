@@ -12,3 +12,6 @@ Takes two numbers as input and returns their product.
 
 # Division:
 Takes two numbers as input and returns the result of dividing the first number by the second.
+
+# Percentage:
+Calculates the percentage of a part relative to a whole.
